@@ -573,6 +573,7 @@ section.advantages {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+    color: var(--text-dark-background);
 }
 
 .form-input::placeholder {
