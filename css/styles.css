@@ -185,7 +185,7 @@ a.logo {
     color: var(--primary-title-color);
 }
 
-.nav-link, .contacts-item{
+.nav-link, .contacts-item {
     transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -517,7 +517,7 @@ section.advantages {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.social-title {
+.social-title, .form-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -558,6 +558,14 @@ section.advantages {
     width: 20px;
     height: 20px;
     fill: var(--default-background);
+}
+
+.form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }
 
 /* portfolio */
@@ -727,7 +735,8 @@ button.tab:focus {
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
-    height: 581px;
+    min-height: 581px;
+    padding: 40px;
     background: var(--default-background);
     transition: transform var(--transition-duration) var(--transition-timing-function);
 }
@@ -754,4 +763,163 @@ button.tab:focus {
     width: 18px;
     height: 18px;
     fill: var(--dark-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
 }
+
+.button-close:hover .icon-close,
+.button-close:focus .icon-close {
+    fill: var(--accent-color);
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--primary-title-color);
+    margin-bottom: 12px;
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-box {
+    margin-bottom: 20px;
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
+}
+
+.modal-input,
+.modal-textarea {
+    display: block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    outline: transparent;
+    transition: border-color var(--transition-duration) var(--transition-timing-function);
+    cursor: pointer;
+}
+
+.modal-input:hover,
+.modal-textarea:hover,
+.modal-input:focus,
+.modal-textarea:focus {
+    border-color: var(--accent-color);
+}
+
+.modal-input:hover + .icon-form,
+.modal-input:focus + .icon-form {
+    fill: var(--accent-color);
+}
+
+.modal-input {
+    padding: 11px 12px 11px 42px;
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-textarea {
+    padding: 12px 16px;
+    height: 120px;
+    resize: none;
+}
+
+.modal-textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.icon-form {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    fill: var(--primary-title-color);
+    pointer-events: none;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.modal-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-title-color);
+    border-radius: 3px;
+    margin-right: 9px;
+    margin-left: 12px;
+}
+
+.label-accept{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+}
+
+.icon-check {
+    fill: var(--default-background);
+    opacity: 0;
+}
+
+.modal-checkbox {
+    outline: transparent;
+}
+
+.modal-checkbox:checked+.modal-rectangle {
+    background-color: var(--accent-color);
+    border-color: transparent;
+}
+
+.modal-checkbox:checked+.modal-rectangle .icon-check {
+    opacity: 1;
+}
+
+.checkbox-link {
+    margin-left: 5px;
+    font-size: 14px;
+    border-bottom: 1px solid;
+    color: var(--accent-color);
+}
+
+.button-form {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-dark-background);
+}
+
+.button-form:hover,
+.button-form:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
