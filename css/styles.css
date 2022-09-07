@@ -887,12 +887,9 @@ button.tab:focus {
     opacity: 0;
 }
 
-.modal-checkbox:checked + .modal-rectangle {
+.modal-checkbox:checked + .icon-check {
     background-color: var(--accent-color);
     border-color: transparent;
-}
-
-.modal-checkbox:checked + .modal-rectangle .icon-check {
     opacity: 1;
 }
 
