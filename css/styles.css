@@ -880,6 +880,7 @@ button.tab:focus {
 .icon-check {
     position: absolute;
     fill: var(--default-background);
+    border-radius: 2px;
 }
 
 .modal-checkbox {
