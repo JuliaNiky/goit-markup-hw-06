@@ -560,12 +560,48 @@ section.advantages {
     fill: var(--default-background);
 }
 
+.form-subscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
 .form-input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    background-color: transparent;
+}
+
+.button-subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-align: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--text-dark-background);
+}
+
+.form-icon {
+    
+}
+
+.icon-send {
+    display: inline-block;
+    vertical-align: middle;
+    fill: var(--default-background);
 }
 
 /* portfolio */
